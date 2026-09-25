@@ -1,12 +1,13 @@
 import ButtonStyleSection from "../sections/ButtonStyleSection";
 import CounterSection from "../sections/CounterSection";
 import JustifyParagraphSection from "../sections/JustifyParagraphSection";
+import MessageByLanguageSection from "../sections/MessageByLanguageSection";
 
 export default function Main() {
   return (
     <section className="container">
       <div class="row g-3">
-        {/* <!-- Prima riga (3 elementi da 4 colonne ciascuno = 12) --> */}
+        {/* <!-- Prima riga --> */}
         <div class="col-md-4">
           <CounterSection />
         </div>
@@ -17,14 +18,13 @@ export default function Main() {
           <JustifyParagraphSection />
         </div>
 
-        {/* <!-- Seconda riga (2 elementi da 6 colonne ciascuno = 12) --> */}
-        <div class="col-md-6">Elemento 4</div>
+        {/* <!-- Seconda riga --> */}
+        <div class="col-md-6">
+          <MessageByLanguageSection />
+        </div>
         <div class="col-md-6">Elemento 5</div>
       </div>
     </section>
-
-    /* Visualizza un messaggio di benvenuto che si aggiorni in tempo reale
-scegliendo tra diverse lingue tramite una serie di bottoni dedicati*/
 
     /* Genera una lista di attività permettendo di segnare ogni elemento
 come completato applicando una classe con stile testuale barrato quando
