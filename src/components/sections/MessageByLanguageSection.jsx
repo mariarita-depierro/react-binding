@@ -44,9 +44,9 @@ export default function MessageByLanguageSection() {
   }
   const currentMessage = messages.find((msg) => msg.id === language);
   return (
-    <section className="bg-secondary-subtle mb-3">
+    <section className="bg-secondary-subtle mb-3 text-center py-2">
       <h2>Message In Your Language</h2>
-      <h4 className="fst-italic text-center">{currentMessage.body}</h4>
+      <h4 className="fst-italic">{currentMessage.body}</h4>
       <div className="btn-group">
         {messages.map((message) => (
           <button
