@@ -4,6 +4,7 @@ import JustifyParagraphSection from "../sections-parte1/JustifyParagraphSection"
 import MessageByLanguageSection from "../sections-parte1/MessageByLanguageSection";
 import ToDoListSection from "../sections-parte1/ToDoListSection";
 import CharacterCounterSection from "../sections-parte2/CharacterCounterSection";
+import FilterByNameSection from "../sections-parte2/FilterByNameSection";
 
 export default function Main() {
   return (
@@ -36,7 +37,9 @@ export default function Main() {
         <div class="col-md-4">
           <CharacterCounterSection />
         </div>
-        <div class="col-md-4">Element</div>
+        <div class="col-md-4">
+          <FilterByNameSection />
+        </div>
         <div class="col-md-4">Element</div>
 
         {/* <!-- Quarta riga --> */}
@@ -47,9 +50,6 @@ export default function Main() {
     </main>
   );
 }
-
-/* 2. filtra istantaneamente un array di nomi visualizzati a schermo mostrando solo quelli che contengono la stringa digitata nell'input
- */
 
 /* 3. aggiorna il contenuto di un tag <h1> con il testo inserito dall'utente in una casella di input,
 sostituendo il valore precedente ad ogni modifica
