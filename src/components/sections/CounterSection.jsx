@@ -18,16 +18,10 @@ export default function CounterSection() {
     <section className="container mt-1 text-center bg-warning-subtle py-3">
       <h2 className="text-danger-emphasis">Counter Section</h2>
       <p className="display-1">{count}</p>
-      <button
-        onClick={handleCounter}
-        className="btn btn-group bg-success me-1 text-white"
-      >
+      <button onClick={handleCounter} className="btn btn-success me-1">
         Add Number
       </button>
-      <button
-        onClick={handleReset}
-        className="btn btn-group bg-danger text-white"
-      >
+      <button onClick={handleReset} className="btn btn-danger ">
         Reset
       </button>
     </section>

@@ -1,5 +1,6 @@
 import ButtonStyleSection from "../sections/ButtonStyleSection";
 import CounterSection from "../sections/CounterSection";
+import JustifyParagraphSection from "../sections/JustifyParagraphSection";
 
 export default function Main() {
   return (
@@ -12,17 +13,15 @@ export default function Main() {
         <div class="col-md-4">
           <ButtonStyleSection />
         </div>
-        <div class="col-md-4">Elemento 3</div>
+        <div class="col-md-4">
+          <JustifyParagraphSection />
+        </div>
 
         {/* <!-- Seconda riga (2 elementi da 6 colonne ciascuno = 12) --> */}
         <div class="col-md-6">Elemento 4</div>
         <div class="col-md-6">Elemento 5</div>
       </div>
     </section>
-
-    /* Creare un componente con tre pulsanti ed un paragrafo.
-Creare una variabile di stato reattiva per gestire l’allineamento del paragrafo.
-Per ogni pulsante, impostare l’evento onClick e impostare l’allineamento in base al pulsante cliccato*/
 
     /* Visualizza un messaggio di benvenuto che si aggiorni in tempo reale
 scegliendo tra diverse lingue tramite una serie di bottoni dedicati*/
