@@ -5,6 +5,7 @@ import MessageByLanguageSection from "../sections-parte1/MessageByLanguageSectio
 import ToDoListSection from "../sections-parte1/ToDoListSection";
 import CharacterCounterSection from "../sections-parte2/CharacterCounterSection";
 import FilterByNameSection from "../sections-parte2/FilterByNameSection";
+import FullNameSection from "../sections-parte2/FullNameSection";
 import UpdateTextSection from "../sections-parte2/UpdateTextSection";
 
 export default function Main() {
@@ -46,17 +47,15 @@ export default function Main() {
         </div>
 
         {/* <!-- Quarta riga --> */}
-        <div class="col-md-6">Element</div>
+        <div class="col-md-6">
+          <FullNameSection />
+        </div>
         <div class="col-md-6">Element</div>
       </div>
       <hr className="border" />
     </main>
   );
 }
-
-/* 4. unisci in tempo reale il valore di due input distinti (nome e cognome)
-visualizzando il risultato completo in un unico elemento di testo
- */
 
 /* 5. mantieni disabilitato un pulsante di azione finché l'utente non spunta
 una specifica casella di controllo per confermare la volontà di procedere

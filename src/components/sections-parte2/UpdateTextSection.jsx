@@ -17,6 +17,7 @@ export default function UpdateTextSection() {
         onChange={(e) => setText(e.target.value)}
         id="text"
         type="text"
+        value={text}
         className="form-control"
       />
       <h1 className="mt-2">{text}</h1>
