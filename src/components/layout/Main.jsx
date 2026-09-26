@@ -5,6 +5,7 @@ import MessageByLanguageSection from "../sections-parte1/MessageByLanguageSectio
 import ToDoListSection from "../sections-parte1/ToDoListSection";
 import CharacterCounterSection from "../sections-parte2/CharacterCounterSection";
 import FilterByNameSection from "../sections-parte2/FilterByNameSection";
+import UpdateTextSection from "../sections-parte2/UpdateTextSection";
 
 export default function Main() {
   return (
@@ -40,7 +41,9 @@ export default function Main() {
         <div class="col-md-4">
           <FilterByNameSection />
         </div>
-        <div class="col-md-4">Element</div>
+        <div class="col-md-4">
+          <UpdateTextSection />
+        </div>
 
         {/* <!-- Quarta riga --> */}
         <div class="col-md-6">Element</div>
@@ -50,10 +53,6 @@ export default function Main() {
     </main>
   );
 }
-
-/* 3. aggiorna il contenuto di un tag <h1> con il testo inserito dall'utente in una casella di input,
-sostituendo il valore precedente ad ogni modifica
- */
 
 /* 4. unisci in tempo reale il valore di due input distinti (nome e cognome)
 visualizzando il risultato completo in un unico elemento di testo
