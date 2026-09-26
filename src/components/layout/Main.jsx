@@ -4,6 +4,7 @@ import JustifyParagraphSection from "../sections-parte1/JustifyParagraphSection"
 import MessageByLanguageSection from "../sections-parte1/MessageByLanguageSection";
 import ToDoListSection from "../sections-parte1/ToDoListSection";
 import CharacterCounterSection from "../sections-parte2/CharacterCounterSection";
+import CheckActionSection from "../sections-parte2/CheckActionSection";
 import FilterByNameSection from "../sections-parte2/FilterByNameSection";
 import FullNameSection from "../sections-parte2/FullNameSection";
 import UpdateTextSection from "../sections-parte2/UpdateTextSection";
@@ -50,16 +51,14 @@ export default function Main() {
         <div class="col-md-6">
           <FullNameSection />
         </div>
-        <div class="col-md-6">Element</div>
+        <div class="col-md-6">
+          <CheckActionSection />
+        </div>
       </div>
       <hr className="border" />
     </main>
   );
 }
-
-/* 5. mantieni disabilitato un pulsante di azione finché l'utente non spunta
-una specifica casella di controllo per confermare la volontà di procedere
- */
 
 /* 6. applica o rimuovi uno stile specifico (es. grassetto, corsivo, sottolineato, evidenziato)
 ad un testo target quando la checkbox associata viene attivata o disattivata
