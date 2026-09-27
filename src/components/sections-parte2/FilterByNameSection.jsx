@@ -28,8 +28,10 @@ export default function FilterByNameSection() {
         />
       </div>
       <ul className="list-group">
-        {filteredNames.map((name) => (
-          <li className="list-group-item text-capitalize">{name}</li>
+        {filteredNames.map((name, index) => (
+          <li key={index} className="list-group-item text-capitalize">
+            {name}
+          </li>
         ))}
       </ul>
     </section>

@@ -12,13 +12,13 @@ export default function CheckActionSection() {
 
       <div className="col g-3">
         <input
-          className="form-check-input border-3 me-2"
+          className="form-check-input border-3 mt-2 me-2"
           id="checkbox"
           type="checkbox"
-          value={isChecked}
+          checked={isChecked}
           onChange={(e) => setIsChecked(e.target.checked)}
         />
-        <label className="form-check-label mb-3" htmlFor="checkbox">
+        <label className="form-check-label" htmlFor="checkbox">
           Accept the{" "}
           <span className="text-primary text-decoration-underline">
             privacy police
@@ -26,7 +26,7 @@ export default function CheckActionSection() {
           to proceed.
         </label>
 
-        <button disabled={!isChecked} className="btn btn-primary">
+        <button disabled={!isChecked} className="btn btn-primary ms-3">
           Submit
         </button>
       </div>

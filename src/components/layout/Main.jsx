@@ -7,62 +7,62 @@ import CharacterCounterSection from "../sections-parte2/CharacterCounterSection"
 import CheckActionSection from "../sections-parte2/CheckActionSection";
 import FilterByNameSection from "../sections-parte2/FilterByNameSection";
 import FullNameSection from "../sections-parte2/FullNameSection";
+import TextStyleByCheckbox from "../sections-parte2/TextStyleByCheckbox";
 import UpdateTextSection from "../sections-parte2/UpdateTextSection";
 
 export default function Main() {
   return (
     <main className="container">
       <h2 className="text-uppercase text-center">Parte I</h2>
-      <div class="row g-3">
+      <div className="row g-3">
         {/* <!-- Prima riga --> */}
-        <div class="col-md-4">
+        <div className="col-md-4">
           <CounterSection />
         </div>
-        <div class="col-md-4">
+        <div className="col-md-4">
           <ButtonStyleSection />
         </div>
-        <div class="col-md-4">
+        <div className="col-md-4">
           <JustifyParagraphSection />
         </div>
 
         {/* <!-- Seconda riga --> */}
-        <div class="col-md-6">
+        <div className="col-md-6">
           <MessageByLanguageSection />
         </div>
-        <div class="col-md-6">
+        <div className="col-md-6">
           <ToDoListSection />
         </div>
       </div>
       <hr className="border-2" />
       <h2 className="text-uppercase text-center">Parte II</h2>
-      <div class="row g-3">
+      <div className="row g-3">
         {/* <!-- Terza --> */}
-        <div class="col-md-4">
+        <div className="col-md-4">
           <CharacterCounterSection />
         </div>
-        <div class="col-md-4">
+        <div className="col-md-4">
           <FilterByNameSection />
         </div>
-        <div class="col-md-4">
+        <div className="col-md-4">
           <UpdateTextSection />
         </div>
 
         {/* <!-- Quarta riga --> */}
-        <div class="col-md-6">
+        <div className="col-md-6">
           <FullNameSection />
         </div>
-        <div class="col-md-6">
+        <div className="col-md-6">
           <CheckActionSection />
+        </div>
+        <div className="col-md-6">
+          <TextStyleByCheckbox />
         </div>
       </div>
       <hr className="border" />
     </main>
   );
 }
-
-/* 6. applica o rimuovi uno stile specifico (es. grassetto, corsivo, sottolineato, evidenziato)
-ad un testo target quando la checkbox associata viene attivata o disattivata
- */
 
 /* 7. ridimensiona il testo della pagina in base al radio button selezionato dall'utente
  */
