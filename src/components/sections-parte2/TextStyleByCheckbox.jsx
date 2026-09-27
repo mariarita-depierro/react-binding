@@ -3,30 +3,7 @@ ad un testo target quando la checkbox associata viene attivata o disattivata*/
 
 import { useState } from "react";
 
-const styleOptions = [
-  {
-    label: "Grassetto",
-    font: "fw-bold",
-    isActive: false,
-  },
-
-  {
-    label: "Sottolineato",
-    font: "text-decoration-underline",
-    isActive: false,
-  },
-
-  {
-    label: "Corsivo",
-    font: "fst-italic",
-    isActive: false,
-  },
-  {
-    label: "Evidenziato",
-    font: "bg-warning",
-    isActive: false,
-  },
-];
+import { styleOptions } from "../../lib/vars";
 
 export default function TextStyleByCheckbox() {
   const [options, setOptions] = useState(styleOptions);
@@ -52,16 +29,16 @@ export default function TextStyleByCheckbox() {
 
       {options.map((option) => (
         <div key={option.label}>
-          <label className="form-check-label pe-1" htmlFor={option.label}>
-            {option.label}
-          </label>
           <input
-            className="form-check-input border-3 me-3"
+            className="form-check-input border-3 me-2"
             id={option.label}
             type="checkbox"
             checked={option.isActive}
             onChange={() => handleCheckOption(option.label)}
           />
+          <label className="form-check-label" htmlFor={option.label}>
+            {option.label}
+          </label>
         </div>
       ))}
 

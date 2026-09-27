@@ -3,38 +3,7 @@ scegliendo tra diverse lingue tramite una serie di bottoni dedicati*/
 
 import { useState } from "react";
 
-const messages = [
-  {
-    id: "it",
-    label: "Italiano",
-    body: "Benvenuto",
-    color: "success",
-  },
-  {
-    id: "en",
-    label: "Inglese",
-    body: "Welcome",
-    color: "info",
-  },
-  {
-    id: "fr",
-    label: "Francese",
-    body: "Accueillir",
-    color: "secondary",
-  },
-  {
-    id: "de",
-    label: "Tedesco",
-    body: "Willkommen",
-    color: "warning",
-  },
-  {
-    id: "es",
-    label: "Spagnolo",
-    body: "Bienvenido",
-    color: "danger",
-  },
-];
+import { messages } from "../../lib/vars";
 
 export default function MessageByLanguageSection() {
   const [language, setLanguage] = useState("it");

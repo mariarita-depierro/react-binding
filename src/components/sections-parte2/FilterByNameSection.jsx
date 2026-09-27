@@ -3,7 +3,7 @@ schermo mostrando solo quelli che contengono la stringa digitata nell'input*/
 
 import { useState } from "react";
 
-const names = ["mariarita", "antonio", "maria", "angelica"];
+import { names } from "../../lib/vars";
 
 export default function FilterByNameSection() {
   const [name, setName] = useState("");

@@ -4,12 +4,7 @@ clicchiamo sull'elemento in questione.*/
 
 import { useState } from "react";
 
-const initialActivities = [
-  { id: 0, toDo: "Homework", completed: false },
-  { id: 2, toDo: "Cooking", completed: false },
-  { id: 3, toDo: "Shopping", completed: false },
-  { id: 4, toDo: "Play Videogames", completed: false },
-];
+import { initialActivities } from "../../lib/vars";
 
 export default function ToDoListSection() {
   // 1. Inizializziamo lo stato con l'intero array di attività

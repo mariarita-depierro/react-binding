@@ -6,6 +6,7 @@ import ToDoListSection from "../sections-parte1/ToDoListSection";
 import CharacterCounterSection from "../sections-parte2/CharacterCounterSection";
 import CheckActionSection from "../sections-parte2/CheckActionSection";
 import FilterByNameSection from "../sections-parte2/FilterByNameSection";
+import FontSizeByRadioSection from "../sections-parte2/FontSizeByRadioSection";
 import FullNameSection from "../sections-parte2/FullNameSection";
 import TextStyleByCheckbox from "../sections-parte2/TextStyleByCheckbox";
 import UpdateTextSection from "../sections-parte2/UpdateTextSection";
@@ -58,14 +59,14 @@ export default function Main() {
         <div className="col-md-6">
           <TextStyleByCheckbox />
         </div>
+        <div className="col-md-6">
+          <FontSizeByRadioSection />
+        </div>
       </div>
       <hr className="border" />
     </main>
   );
 }
-
-/* 7. ridimensiona il testo della pagina in base al radio button selezionato dall'utente
- */
 
 /* 8. converti e mostra il prezzo di un prodotto fisso in diverse valute (EUR, USD, GBP)
 aggiornando il simbolo e il valore in base alla select
