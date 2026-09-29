@@ -4,7 +4,7 @@ in una casella di input o textarea, aggiornando il conteggio ad ogni digitazione
 import { useState } from "react";
 
 export default function CharacterCounterSection() {
-  const [text, setText] = useState("Text Example");
+  const [text, setText] = useState("");
 
   return (
     <section className="bg-primary text-white p-4">
@@ -18,6 +18,7 @@ export default function CharacterCounterSection() {
           id="text"
           type="text"
           className="form-control"
+          placeholder="Text Example"
           value={text}
         />
         <h3 className="form-text text-white">
