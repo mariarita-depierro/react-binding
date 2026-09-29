@@ -119,3 +119,22 @@ export const prices = [
     conversionRate: 1.14,
   },
 ];
+
+//TextQuantitySection
+export const alertMessages = [
+  {
+    max: 10,
+    label: "Testo troppo corto! Scrivi almeno 10 caratteri.",
+    variantColor: "warning",
+  },
+  {
+    max: 100,
+    label: "Lunghezza ottimale!",
+    variantColor: "success",
+  },
+  {
+    max: 225,
+    label: "Testo troppo lungo! Hai superato il limite.",
+    variantColor: "danger",
+  },
+];

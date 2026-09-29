@@ -10,6 +10,7 @@ import FilterByNameSection from "../sections-parte2/FilterByNameSection";
 import FontSizeByRadioSection from "../sections-parte2/FontSizeByRadioSection";
 import FullNameSection from "../sections-parte2/FullNameSection";
 import RemainingCharactersSection from "../sections-parte2/RemainingCharactersSection";
+import TextQuantitySection from "../sections-parte2/TextQuantitySection";
 import TextStyleByCheckbox from "../sections-parte2/TextStyleByCheckbox";
 import UpdateTextSection from "../sections-parte2/UpdateTextSection";
 
@@ -70,10 +71,10 @@ export default function Main() {
         <div className="col-md-6">
           <RemainingCharactersSection />
         </div>
+        <div className="col-md-6">
+          <TextQuantitySection />
+        </div>
       </div>
     </main>
   );
 }
-
-/* 10. mostra degli avvisi riguardo la quantità di testo
-scritto in una textarea (es. troppo corto, troppo lungo, lunghezza ottimale) */
