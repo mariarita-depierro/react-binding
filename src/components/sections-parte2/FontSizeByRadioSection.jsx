@@ -29,7 +29,6 @@ export default function FontSizeByRadioSection() {
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
         debitis quod. Ducimus cupiditate ratione, saepe mollitia, rem placeat
         reprehenderit, doloribus voluptate fugit deleniti cum reiciendis.
-        Perferendis nemo ipsam ad quisquam.
       </p>
     </section>
   );

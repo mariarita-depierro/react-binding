@@ -5,6 +5,7 @@ import MessageByLanguageSection from "../sections-parte1/MessageByLanguageSectio
 import ToDoListSection from "../sections-parte1/ToDoListSection";
 import CharacterCounterSection from "../sections-parte2/CharacterCounterSection";
 import CheckActionSection from "../sections-parte2/CheckActionSection";
+import ConvertPriceSection from "../sections-parte2/ConvertPriceSection";
 import FilterByNameSection from "../sections-parte2/FilterByNameSection";
 import FontSizeByRadioSection from "../sections-parte2/FontSizeByRadioSection";
 import FullNameSection from "../sections-parte2/FullNameSection";
@@ -62,19 +63,17 @@ export default function Main() {
         <div className="col-md-6">
           <FontSizeByRadioSection />
         </div>
+        <div className="col-md-6">
+          <ConvertPriceSection />
+        </div>
       </div>
       <hr className="border" />
     </main>
   );
 }
 
-/* 8. converti e mostra il prezzo di un prodotto fisso in diverse valute (EUR, USD, GBP)
-aggiornando il simbolo e il valore in base alla select
- */
-
 /* 9. mostra il numero di caratteri rimanenti da scrivere
-durante la digitazione in una textarea
- */
+durante la digitazione in una textarea*/
 
 /* 10. mostra degli avvisi riguardo la quantità di testo
 scritto in una textarea (es. troppo corto, troppo lungo, lunghezza ottimale) */

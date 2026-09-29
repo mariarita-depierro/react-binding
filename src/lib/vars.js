@@ -100,3 +100,22 @@ export const fontSizeOptions = [
     fontSize: 6,
   },
 ];
+
+//ConvertPriceSection
+export const prices = [
+  {
+    label: "euro",
+    symbol: "€",
+    conversionRate: 1,
+  },
+  {
+    label: "sterline",
+    symbol: "£",
+    conversionRate: 0.86,
+  },
+  {
+    label: "dollari",
+    symbol: "$",
+    conversionRate: 1.14,
+  },
+];

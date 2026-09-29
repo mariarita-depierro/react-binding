@@ -21,7 +21,8 @@ export default function TextStyleByCheckbox() {
 
   const filteredIsActive = options
     .filter((item) => item.isActive)
-    .map((item) => item.font);
+    .map((item) => item.font)
+    .join(" ");
 
   return (
     <section className="bg-warning-subtle px-2 py-4">
